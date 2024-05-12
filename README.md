@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TaskTrove: Fullstack Todo App with Next.js
+
+This is a simple todo application built with Next.js that utilizes both frontend and backend functionalities.
+
+## Features
+
+- **Create**: Add new todo items.
+- **Read**: View the list of existing todo items.
+- **Update**: Mark todo items as completed or update their content.
+- **Delete**: Remove todo items from the list.
+
+## Technologies Used
+
+- **Frontend**:
+  - Next.js
+  - React.js
+  - Tailwind CSS
+
+- **Backend**:
+  - Next.js
+  - MongoDB
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+* Node.js installed on your machine and npm (or yarn) installed: https://nodejs.org/en/
+* MongoDB database installed and running: https://www.mongodb.com/tryfree
+
+### Installation
+
+1. Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/imparth7/tasktrove.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory
+```bash
+  cd tasktrove
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies
+```bash
+  npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Set up environment variables
 
-## Learn More
+Create a .env file in the project root directory (ignore this file in version control) and add the following environment variable:
 
-To learn more about Next.js, take a look at the following resources:
+```.env
+  MONGODB_URI=your_mongodb_connection_string
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Replace your_mongodb_connection_string with your actual MongoDB connection URI. You can obtain this URI from your MongoDB dashboard or by creating a new database cluster.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Start the development server:
+```bash
+  npm run dev
+```
+This will start the server on [http://localhost:3000](http://localhost:3000) by default.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Access the application in your browser:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your web browser.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
